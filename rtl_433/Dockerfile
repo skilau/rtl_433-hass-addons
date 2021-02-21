@@ -20,7 +20,7 @@ RUN apk add --no-cache --virtual build-deps alpine-sdk cmake git libusb-dev && \
     make install && \
     chmod +s /usr/local/bin/rtl_* && \
     cd /tmp/src/ && \
-    git clone --branch debug https://github.com/skilau/rtl_433 && \
+    git clone https://github.com/skilau/rtl_433 && \
     cd rtl_433/ && \
     mkdir build && \
     cd build && \
